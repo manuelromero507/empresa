@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(to top, #6a0dad, #00cfff); /* Morado → Celeste */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transform: scale(0.9);
+  font-family: 'Elpa', sans-serif;
+  background-color: #f5f7fa;
+  color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+/* Encabezado */
+.header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Navegación */
+.navigation ul {
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #dfe6e9;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation a {
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation a:hover {
+  background-color: #9780ff;
+  color: white;
+}
+
+p {
+  padding: 20px;
+  font-size: 1.2rem;
+}
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: right;
+}
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  margin-top: 30px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.contact-form h2 {
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 20px;
+  color: #6a0dad;
+  text-align: center;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6a0dad;
+  box-shadow: 0 0 0 3px rgba(106, 13, 173, 0.2);
+  outline: none;
+}
+
+.contact-form button {
+  padding: 14px 24px;
+  border: none;
+  background: #6a0dad;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
