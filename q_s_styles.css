@@ -17,15 +17,16 @@ body {
   min-height: 100vh;
 }
 
+/* Título */
 .title {
   font-size: 2.5rem;
   font-weight: 700;
   font-family: 'Orbitron', sans-serif;
-  background: #6a0dad;
+  background: linear-gradient(to top, #6a0dad, #00cfff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 /* Encabezado */
@@ -53,7 +54,6 @@ body {
 }
 
 .navigation a {
-  font-family: 'Orbitron', sans-serif;
   color: #e0e0e0;
   background-color: #2c2c2c;
   text-decoration: none;
@@ -64,7 +64,7 @@ body {
 }
 
 .navigation a:hover {
-  background-color: #6a0dad;
+  background-color: #5e4bff;
   color: white;
 }
 
