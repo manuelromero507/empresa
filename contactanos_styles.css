@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +9,8 @@
 body {
   transform: scale(0.9);
   font-family: 'Elpa', sans-serif;
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #0a0f1c;
+  color: #e5e7eb;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,15 +18,17 @@ body {
   min-height: 100vh;
 }
 
+/* Título */
 .title {
   font-size: 2.5rem;
   font-weight: 700;
   font-family: 'Orbitron', sans-serif;
-  background: #6a0dad;
+  background: linear-gradient(90deg, #00f5ff, #7c3aed);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   padding-bottom: 20px;
+  text-shadow: 0 0 12px rgba(0, 245, 255, 0.6);
 }
 
 .header {
@@ -33,7 +36,7 @@ body {
   text-align: center;
 }
 
-/* NUEVO: Alinea y limita ancho de navegación y formulario */
+/* Alineación */
 .navigation ul,
 .contact-form {
   max-width: 800px;
@@ -41,17 +44,18 @@ body {
   margin: 0 auto;
 }
 
+/* Navegación */
 .navigation ul {
   list-style: none;
-  background-color: #1e1e1e;
-  border: 1px solid #333;
+  background-color: #111827;
+  border: 1px solid #1f2937;
   border-radius: 12px;
   padding: 20px;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(0, 245, 255, 0.1);
 }
 
 .navigation li {
@@ -59,44 +63,52 @@ body {
 }
 
 .navigation a {
-  color: #e0e0e0;
-  background-color: #2c2c2c;
+  color: #e5e7eb;
+  background-color: #1f2937;
   text-decoration: none;
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: 500;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
   font-family: 'Orbitron', sans-serif;
 }
+
 .navigation li:hover a {
-  background-color: #6a0dad;
-  color: white;
+  background-color: #00f5ff;
+  color: #0a0f1c;
+  box-shadow: 0 0 10px #00f5ff;
 }
 
 .navigation a:hover i {
-  text-shadow: 0 0 10px #ffffff, 0 0 20px #6a0dad;
+  text-shadow: 0 0 10px #00f5ff;
 }
 
+/* Texto */
 p {
   padding: 20px;
   font-size: 1.2rem;
+  color: #9ca3af;
 }
 
+/* Secciones */
 section {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #1e1e1e;
+  background-color: #111827;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid #1f2937;
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.2);
   text-align: right;
 }
 
+/* Formulario */
 .contact-form {
-  background-color: rgba(40, 40, 40, 0.9);
+  background-color: rgba(17, 24, 39, 0.9);
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  border: 1px solid #1f2937;
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.15);
   text-align: left;
   font-size: 1rem;
   margin-top: 30px;
@@ -105,8 +117,10 @@ section {
 .contact-form h2 {
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 20px;
-  color: #6a0dad;
   text-align: center;
+  background: linear-gradient(90deg, #00f5ff, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact-form form {
@@ -117,43 +131,48 @@ section {
 
 .contact-form label {
   font-weight: 600;
-  color: #e0e0e0;
+  color: #e5e7eb;
 }
 
+/* Inputs */
 .contact-form input,
 .contact-form textarea {
   padding: 12px 16px;
   border-radius: 8px;
-  border: 1px solid #444;
-  background-color: #2c2c2c;
-  color: #e0e0e0;
+  border: 1px solid #374151;
+  background-color: #1f2937;
+  color: #e5e7eb;
   font-size: 1rem;
-  transition: border 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   resize: none;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #6a0dad;
-  box-shadow: 0 0 0 3px rgba(106, 13, 173, 0.3);
+  border-color: #00f5ff;
+  box-shadow: 0 0 10px #00f5ff;
   outline: none;
 }
 
+/* Botón */
 .contact-form button {
   padding: 14px 24px;
   border: none;
-  background: #6a0dad;
-  color: white;
+  background: linear-gradient(90deg, #00f5ff, #7c3aed);
+  color: #0a0f1c;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: #2b0044;
+  background: linear-gradient(90deg, #22c55e, #00f5ff);
+  box-shadow: 0 0 15px #00f5ff;
 }
+
+/* Redes sociales */
 .redes-sociales {
   display: flex;
   flex-wrap: wrap;
@@ -174,22 +193,24 @@ section {
   padding: 12px 20px;
   border-radius: 12px;
   transition: all 0.3s ease;
-  background-color: #1e1e1e;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  box-shadow: 0 0 10px rgba(0, 245, 255, 0.1);
 }
 
 .social-link i {
   font-size: 1.8rem;
 }
 
-/* Colores individuales */
+/* Redes con glow */
 .whatsapp {
   color: #25D366;
   border: 1px solid #25D366;
 }
 .whatsapp:hover {
   background-color: #25D366;
-  color: #121212;
+  color: #0a0f1c;
+  box-shadow: 0 0 12px #25D366;
 }
 
 .instagram {
@@ -199,21 +220,25 @@ section {
 .instagram:hover {
   background-color: #E1306C;
   color: #fff;
+  box-shadow: 0 0 12px #E1306C;
 }
 
 .github {
-  color: #D44638;
-  border: 1px solid #D44638;
+  color: #00f5ff;
+  border: 1px solid #00f5ff;
 }
 .github:hover {
-  background-color: #D44638;
-  color: #fff;
+  background-color: #00f5ff;
+  color: #0a0f1c;
+  box-shadow: 0 0 12px #00f5ff;
 }
+
 .correo {
-  color: #1877F2;
-  border: 1px solid #1877F2;
+  color: #7c3aed;
+  border: 1px solid #7c3aed;
 }
 .correo:hover {
-  background-color: #1877F2;
+  background-color: #7c3aed;
   color: #fff;
+  box-shadow: 0 0 12px #7c3aed;
 }
